@@ -23,9 +23,10 @@ console.log("original data", arr); // Expected Output: [2, 4, 6]
 ## Immutability
 
 Make sure objects *are not* **reassignable**
+
 Make sure objects *are* **immutable**
 
-Most mutator methods can be replaced by other methods, here's some examples:
+Most mutator methods can be replaced by other methods, examples:
 
 ```javascript
 const a = Object.freeze([4, 5, 6]);
