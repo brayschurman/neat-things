@@ -1,6 +1,6 @@
 # Chrome Dev Tools
 
-Open the command palette ```Command + Shift + P
+Open the command palette `Command + Shift + P`
 
 ## Console
 
