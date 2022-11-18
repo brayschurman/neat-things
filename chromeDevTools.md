@@ -13,5 +13,7 @@ console.error() // displays error message
 
 console.table() // table
 
-console.time()...followed by console.timeEnd() // start and end a timer
+console.time() // start a timer
+
+console.timeEnd() // end a timer
 ```
