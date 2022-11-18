@@ -22,8 +22,8 @@ console.log("original data", arr); // Expected Output: [2, 4, 6]
 
 ## Immutability
 
-- Make sure objects *are not* **reassignable**
-- Make sure objects *are* **immutable**
+* Make sure objects *are not* **reassignable**
+* Make sure objects *are* **immutable**
 
 Most mutator methods can be replaced by other methods, examples:
 
