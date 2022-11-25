@@ -28,7 +28,7 @@ async function f() {
 
 ```
 
-The JavaScript engine will pause execution at the **await** line and proceed with other tasks until it gets a result. Another example:
+The JavaScript engine will pause execution at the **await** line and proceed with other tasks until it gets a result.
 
 ```javascript
 
