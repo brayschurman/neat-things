@@ -48,3 +48,20 @@ const f = R.sort(myCompareFunction, a); // R = Ramda
 // Instead of: a.reverse();
 const g = R.reverse(a); // R = Ramda 
 ```
+
+## Copying and Cloning
+
+In JavaScript, you can't use the '=' to copy arrays because they are reference values. This is where you would use the spread operator.
+
+```javascript
+const sheeps = ['🐑', '🐑', '🐑'];
+
+const fakeSheeps = sheeps;
+const cloneSheeps = [...sheeps];
+
+console.log(sheeps === fakeSheeps);
+// true --> it's pointing to the same memory space
+
+console.log(sheeps === cloneSheeps);
+// false --> it's pointing to a new memory space
+```
