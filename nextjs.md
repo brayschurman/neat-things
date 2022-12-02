@@ -1,10 +1,16 @@
 # NextJS
 
-## getServerSideProps
+## Data Fetching
+
+### getServerSideProps
 
 Will pre-render the page at **request time**, using the data return by it.
 
-This is *only run on server-side* and is ideal for allowing the page to fetch things like authorization or geo-location.
+This is *only run on server-side* which allows for writing database queries **directly** (instead of an API route, and *then* fetching).
+
+#### When to use
+
+Fetch one time things like authorization or geo-location.
 
 ```javascript
 function Page({ data }) {
@@ -24,13 +30,13 @@ export async function getServerSideProps() {
 export default Page
 ```
 
-## getStaticProps() aka Static Site Generation
+### getStaticProps() aka Static Site Generation
 
 Will pre-render the page at **build time**, meaning when the ```npm run build``` function runs, thpOge is statically generated.
 
-This is *only run on server-side* which allows for writing database queries **directly** (instead of an API route, then fetching).
+This is also *only run on server-side*.
 
-### When to use
+#### When to use
 
 * Data required to render is available at build time.
 
