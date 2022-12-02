@@ -2,9 +2,11 @@
 
 ## Data Fetching
 
+Ok, I made this doc after having 3 Space Invaders, bear with me,
+
 ### getServerSideProps
 
-Will pre-render the page at **request time**, using the data return by it.
+Will pre-render the page at **request time**, using the data returned by it.
 
 This is *only run on server-side* which allows for writing database queries **directly** (instead of an API route, and *then* fetching).
 
