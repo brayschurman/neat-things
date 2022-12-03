@@ -9,19 +9,19 @@ Here lies things I'd like to have reference to. Most examples are in JavaScript.
 
 ## JavaScript
 
--[Async](JavaScript/async.md)
--[Chrome Dev Tools](JavaScript/chromeDevTools.md)
--[Destructuring](JavaScript/destructuring.md)
--[Functional](JavaScript/functional.md)
--[Functions](JavaScript/functions.md)
--[NextJS](JavaScript/nextjs.md)
--[ReactJS](JavaScript/react.md)
--[TypeScript](JavaScript/typescript.md)
+- [Async](JavaScript/async.md)
+- [Chrome Dev Tools](JavaScript/chromeDevTools.md)
+- [Destructuring](JavaScript/destructuring.md)
+- [Functional](JavaScript/functional.md)
+- [Functions](JavaScript/functions.md)
+- [NextJS](JavaScript/nextjs.md)
+- [ReactJS](JavaScript/react.md)
+- [TypeScript](JavaScript/typescript.md)
 
 ## Linux
 
--[File Structure](Linux/fileStructure.md)
+- [File Structure](Linux/fileStructure.md)
 
 ## Networking
 
--[Command Line](Networking/commandLine.md)
+- [Command Line](Networking/commandLine.md)
