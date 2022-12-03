@@ -6,7 +6,7 @@
 
 ``` /sbin ``` is binaries for **admin** users
 
-``` /boots ``` is for **booting**, of course
+``` /boot ``` is for **booting**, of course
 
 ``` /dev ``` is where **devices** live, hardware, partitions
 
@@ -38,6 +38,6 @@
 
 ``` /home ``` **personal** files and documents, one for each user
 
-## Fun Facts
+## Super fun and and not boring facts
 
 * Mac evolved from the BSD distro
