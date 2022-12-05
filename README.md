@@ -6,6 +6,7 @@ Here lies things I'd like to have reference to.
   - [JavaScript](#javascript)
   - [Linux](#linux)
   - [Networking](#networking)
+  - [Todo](#todo)
 
 ## JavaScript
 
@@ -25,3 +26,11 @@ Here lies things I'd like to have reference to.
 ## Networking
 
 - [Command Line](Networking/commandLine.md)
+
+## Todo
+
+- useContext
+- useReducer
+- data structures
+- algorithms
+- big O

@@ -42,7 +42,7 @@ if (field === "name") {
 
 I have been neglecting to learn how to do this...
 
-```javascript
+```typescript
 
 type TechnologyCardProps = {
     name: string;
