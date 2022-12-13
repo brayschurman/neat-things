@@ -2,15 +2,17 @@
 
 ## Data Fetching
 
-Ok, I made this doc after having 3 Space Invaders, bear with me,
+* Make sure data "catching" logic goes *after* all hooks... (useState, TRPC) I kept making this mistake and was getting weird rendering error.
 
-### getServerSideProps
+Ok, I made this doc after having 3 Space Invaders, bear with me.
 
-Will pre-render the page at **request time**, using the data returned by it.
+### getServerSideProps()
+
+Will pre-render the page at **request time**, using the data returned by it as props.
 
 This is *only run on server-side* which allows for writing database queries **directly** (instead of an API route, and *then* fetching).
 
-#### When to use
+#### When to use getServerSideProps()
 
 Fetch one time things like authorization or geo-location.
 
@@ -34,11 +36,11 @@ export default Page
 
 ### getStaticProps() aka Static Site Generation
 
-Will pre-render the page at **build time**, meaning when the ```npm run build``` function runs, thpOge is statically generated.
+Will pre-render the page at **build time**, meaning when the ```npm run build``` function runs, the page is statically generated. This is good for optimizing since page can be statically generated on build.
 
 This is also *only run on server-side*.
 
-#### When to use
+#### When to use getStaticProps()
 
 * Data required to render is available at build time.
 
