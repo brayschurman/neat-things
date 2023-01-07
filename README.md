@@ -18,6 +18,7 @@ Here lies things I'd like to have reference to.
 - [NextJS](JavaScript/nextjs.md)
 - [ReactJS](JavaScript/react.md)
 - [TypeScript](JavaScript/typescript.md)
+- [Node](JavaScript/node.md)
 
 ## Linux
 
