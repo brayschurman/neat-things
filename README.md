@@ -6,6 +6,7 @@ Here lies things I'd like to have reference to.
   - [JavaScript](#javascript)
   - [Linux](#linux)
   - [Networking](#networking)
+  - [Git](#git)
   - [Todo](#todo)
 
 ## JavaScript
@@ -27,6 +28,10 @@ Here lies things I'd like to have reference to.
 ## Networking
 
 - [Command Line](Networking/commandLine.md)
+
+## Git
+
+- [Git](Git/git.md)
 
 ## Todo
 
