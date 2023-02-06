@@ -6,7 +6,7 @@ In a **synchronous** system, tasks are completed one after the other.
 
 In an **asynchronous** system, tasks are completed independent of one another.
 
-- beneficial in situations where we would like the program to proceed and not _wait_ for the return (API call, fetch, image processing). This even works on single-threaded stuff like JavaScript.
+- is beneficial in situations where we would like the program to proceed and not _wait_ for the return (API call, fetch, image processing). This even works on single-threaded stuff like JavaScript.
 
 ## Async Await
 
