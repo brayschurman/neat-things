@@ -1,10 +1,8 @@
 # Caching
 
--   fundamental concept and widely used, from hardware to web
+-   about storing data in a faster but also smaller storage system
 
--   about storing data in a faster but smaller storage system
-
--   when you want to access some backend data, you first check if it's in the cache. If it is, use that data and save the time of fetching it from the slower main storage.
+-   when you want to access some backend data, you first check if it's in the cache. if it is, use that data and save the time of fetching it from the slower main storage.
 
 -   if the data is not in the cache (a "cache hit miss"), you fetch it from main storage and also store it in the cache for potential future use.
 
