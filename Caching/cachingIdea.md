@@ -25,17 +25,13 @@ myCache.set('song1234PlayCount', 0);
 let playCount = myCache.get('song1234PlayCount') || 0;
 playCount++;
 myCache.set('song1234PlayCount', playCount);
+
+// At measured intervals, the cached play count is returned to the database and the cache is purged
+let finalPlayCount = myCache.get('song1234PlayCount') || 0;
+myCache.del('song1234PlayCount');
+// At this juncture, finalPlayCount would be inscribed back into the database
 ```
 
-// At measured intervals, the cached play count is returned to the database and the cache is purged
-let finalPlayCount = myCache.get('song1234PlayCount') || 0;
-myCache.del('song1234PlayCount');
-// At this juncture, finalPlayCount would be inscribed back into the database
-
-// At measured intervals, the cached play count is returned to the database and the cache is purged
-let finalPlayCount = myCache.get('song1234PlayCount') || 0;
-myCache.del('song1234PlayCount');
-// At this juncture, finalPlayCount would be inscribed back into the database
 In the realm of a distributed system like Spotify, it would be advisable to employ a distributed cache so that all servers might partake of the same cache data.
 
 The game of managing caches can indeed be a "tricky" endeavour, owing to the duel of the two data copies (the cache and the main storage) to maintain synchronisation. This battle is recognized as cache invalidation and is reputed to be a formidable opponent. Hence, I bid you good fortune in your endeavours, soldier.
