@@ -2,9 +2,17 @@
 
 The decision to house data in a more agile, albeit restricted, storage system brings about its unique set of challenges and benefits.
 
-## Cache-based Storage and Its Merits and Challenges
+# **Cache-based Storage and Its Merits and Challenges**
 
-Choosing to entomb data in a sprightlier, albeit limited, storage system yields its distinctive trials and tribulations. When the requirement arises to access backend data, the first place to scrutinize is the cache. Should you be fortunate enough to unearth it there, you merely utilise that data, sparing yourself the onerous task of excavating it from the significantly slower main storage.
+Choosing to entomb data in a sprightlier, albeit limited, storage system yields its distinctive trials and tribulations.
+
+## **Data Access**
+
+When the requirement arises to access backend data, the first place to scrutinize is the [cache](<https://en.wikipedia.org/wiki/Cache_(computing)>).
+
+-   If you're fortunate enough to unearth it there, you merely utilize that data, sparing yourself the onerous task of excavating it from the significantly slower main storage.
+
+_Note: Caching can significantly speed up data retrieval, reducing the need to access the main storage directly._
 
 Alas, if the data fails to grace the cache – an unfortunate circumstance colloquially known as a 'cache miss' – one must undertake the expedition to fetch it from the main storage. Nevertheless, you then display the wisdom to house it within the cache for future endeavors.
 
@@ -42,11 +50,17 @@ Listen closely, cache invalidation is not a subject for the faint of heart. It's
 
 There are various strategies, each with their own merits and disadvantages, mind you:
 
-Time to Live (TTL): A simplistic, yet sometimes effective method. Each piece of data in the cache is given a lifespan, a ticking clock, if you will. Upon reaching its end, the item is discarded as stale. When next you seek this data, it will be fetched anew from the database. But beware, for this method is far from perfect. Should the original data alter before the TTL expires, you're left with outdated information, a stale ghost of its former self.
+### Time to Live (TTL)
 
-Write-Through: This method ties the cache and database in an unbreakable bond. Every whisper to the cache is echoed in the database simultaneously, ensuring their unity. The price for such perfection? The sluggish speed of your write operations, as slow as a Mandrake's growth, for they are limited by the slow drawl of the database.
+A simplistic, yet sometimes effective method. Each piece of data in the cache is given a lifespan, a ticking clock, if you will. Upon reaching its end, the item is discarded as stale. When next you seek this data, it will be fetched anew from the database. But beware, for this method is far from perfect. Should the original data alter before the TTL expires, you're left with outdated information, a stale ghost of its former self.
 
-Write-Back (or Write-Behind): Ah, the deceptive allure of speed. Writes are cast to the cache, leaving the responsibility of informing the database for a later time. Indeed, it might seem an elegant solution, as your write operations are as swift as a Golden Snitch. However, do not be fooled. The complexity of the spell increases, for now you must prepare for situations where the cache successfully receives the data, yet the database write fails.
+### Write-Through
+
+This method ties the cache and database in an unbreakable bond. Every whisper to the cache is echoed in the database simultaneously, ensuring their unity. The price for such perfection? The sluggish speed of your write operations, as slow as a Mandrake's growth, for they are limited by the slow drawl of the database.
+
+### Write-Back (or Write-Behind)
+
+Ah, the deceptive allure of speed. Writes are cast to the cache, leaving the responsibility of informing the database for a later time. Indeed, it might seem an elegant solution, as your write operations are as swift as a Golden Snitch. However, do not be fooled. The complexity of the spell increases, for now you must prepare for situations where the cache successfully receives the data, yet the database write fails.
 
 In this perilous journey through the dark arts of cache invalidation, one must not forget the ominous shadow of complexity, particularly in distributed systems, where multiple caches lurk. The chosen strategies heavily depend on the peculiar demands of your application, such as the freshness of data, acceptable latency, and the degree of data inconsistency you dare to tolerate. Often, one finds themselves weaving a tapestry of these methods to achieve the desired outcome.
 
