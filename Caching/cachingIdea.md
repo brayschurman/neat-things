@@ -10,8 +10,7 @@ In the context of a web application like Spotify, caching could be used to store
 
 Here's a simple JavaScript example using node-cache, a simple caching module for Node.js:
 
-```
-javascript
+```js
 Copy code
 const NodeCache = require( "node-cache" );
 const myCache = new NodeCache();
