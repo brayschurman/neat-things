@@ -1,12 +1,12 @@
 # Caching
 
--fundamental concept and widely used, from hardware to web
+-   fundamental concept and widely used, from hardware to web
 
--about storing data in a faster but smaller storage system
+-   about storing data in a faster but smaller storage system
 
--when you want to access some backend data, you first check if it's in the cache. If it is, use that data and save the time of fetching it from the slower main storage.
+-   when you want to access some backend data, you first check if it's in the cache. If it is, use that data and save the time of fetching it from the slower main storage.
 
--if the data is not in the cache (a "cache hit miss"), you fetch it from main storage and also store it in the cache for potential future use.
+-   if the data is not in the cache (a "cache hit miss"), you fetch it from main storage and also store it in the cache for potential future use.
 
 In the context of a web application like Spotify, caching could be used to store things like the play count of a song. If a song is played very frequently, updating the database every time someone plays it could be very slow and put a lot of load on the database server. Instead, every time the song is played, the play count could be updated in a cache (which is usually memory-based and hence faster), and then every so often, the cached count could be written to the database in one go.
 
