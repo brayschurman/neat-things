@@ -30,6 +30,10 @@ Welcome, dear friend, to the hallowed halls of knowledge, a gathering place for 
 
 -   ⚡️ [Caching](Caching/caching.md)
 
+## Databases 📚📖
+
+-   📖 [Normalization](Databases/normalization.md)
+
 ## Todo 📝✅
 
 -   useContext
