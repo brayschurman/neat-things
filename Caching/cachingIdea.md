@@ -11,21 +11,20 @@ In the context of a web application like Spotify, caching could be used to store
 Here's a simple JavaScript example using node-cache, a simple caching module for Node.js:
 
 ```js
-Copy code
-const NodeCache = require( "node-cache" );
+const NodeCache = require('node-cache');
 const myCache = new NodeCache();
 
 // Put something in the cache
-myCache.set("song1234PlayCount", 0);
+myCache.set('song1234PlayCount', 0);
 
 // Later, when a song is played
-let playCount = myCache.get("song1234PlayCount") || 0;
+let playCount = myCache.get('song1234PlayCount') || 0;
 playCount++;
-myCache.set("song1234PlayCount", playCount);
+myCache.set('song1234PlayCount', playCount);
 
 // Periodically, you'd write the cached play count back to the database and reset the cache
-let finalPlayCount = myCache.get("song1234PlayCount") || 0;
-myCache.del("song1234PlayCount");
+let finalPlayCount = myCache.get('song1234PlayCount') || 0;
+myCache.del('song1234PlayCount');
 // Here you'd write finalPlayCount back to the database
 ```
 
