@@ -1,27 +1,24 @@
-# Normalization: An Elven Tale of Orderliness
+# Database Normalization
 
-Normalization, a discipline practiced by the wise elves, is the process of efficiently organizing data in a database. There exist various stages, known as normal forms, each depending on the previous, much like an intricate story passed down through the ages. Herein, we shall delve into the first three. Learn more about it on [Wikipedia](https://en.wikipedia.org/wiki/Database_normalization).
+Each form of normalization depends on its predecessor.
 
-## The 1st Normal Form: The Single Valued Cell
+## 1st Normal Form
 
-In this form, we ensure:
+- Each cell contains a single value.
+- Entries in a column are of the same kind.
+- Rows are unique and identified uniquely.
 
--   Each cell is single valued, akin to an elf focusing on a single task.
--   Entries in a column are of the same type, much like an elven kin sharing the same lineage.
--   Rows are unique and uniquely identified, as each elf is distinct and has a unique name.
+> **Example**, in Airbnb's case, if we have a 'Guest' table, it's better not to have columns for 'GuestName' and 'GuestAddress' in the same table. Instead, we should create separate tables for 'GuestName' and 'GuestAddress', and then reference these in the 'Guest' table.
 
-> **For instance**, [Spotify](https://www.spotify.com/) uses unique identifiers for each of its songs, albums, and artists, thus ensuring that each row is unique and uniquely identified. They also ensure that entries in a column, such as 'song duration' or 'artist name', are of the same type.
+## 2nd Normal Form
 
-## The 2nd Normal Form: The Dependence on the Primary Key
+- All attributes (non-key columns) are dependent on the primary key.
 
-At this level, we adhere to the principle of each attribute (non-key column) being dependent on the primary key. It mirrors the elven way of life where everything depends on their ruler, the primary key.
+> **Example**, for Airbnb's 'PropertyBooking' table, we only need 'PropertyID' and not 'PropertyName', as the name can be determined from the 'PropertyID'.
 
-> **For instance**, imagine a table in Airbnb's database named 'PropertyBookings'. Here, we would only need 'PropertyID' and not 'PropertyName', since the name can be determined from the 'PropertyID', much like the elven king's decree determining the actions of his subjects. Airbnb would employ such a strategy to ensure that their booking data adheres to the second normal form.
+## 3rd Normal Form
 
-## The 3rd Normal Form: "Nothing but the key"
+- "Nothing but the key" - no transitive dependencies.
+- All fields must only be determined by the primary key.
 
-This form abides by the adage "Nothing but the key", emphasizing the elimination of transitive dependencies. It requires all fields to be only determinable by the primary key, similar to the way an elf's lineage is defined by their ancestor's name.
-
-> **For instance**, a Spotify table containing 'SongID', 'AlbumID', and 'AlbumReleaseYear' properties exhibits a transitive dependency. 'AlbumReleaseYear' depends on 'AlbumID', which in turn depends on 'SongID'. To adhere to the 3rd Normal Form, 'AlbumReleaseYear' should be moved to a separate 'Albums' table and referenced there, much like the elven practice of associating characteristics with specific elven clans.
-
-Want to delve deeper into database normalization? Visit this comprehensive guide at [StudyTonight](https://www.studytonight.com/dbms/database-normal-forms.php).
+> **Example**, suppose Airbnb has a 'HostRating' table with the properties 'HostID' -> 'HostExperienceLevel' -> 'HostRating'. This table isn't in 3NF because 'HostRating' is a transitive dependency and should be moved to a separate 'HostExperienceLevel' table, then referenced from there.

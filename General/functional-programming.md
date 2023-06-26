@@ -13,7 +13,7 @@ Functional programming encourages **pure** functions. In the example below, we u
 const arr = [2, 4, 6];
 
 function addElement(arr, ele) {
-    return [...arr, ele];
+  return [...arr, ele];
 }
 
 console.log("modified data", addElement(arr, 8)); // Expected Output: [2, 4, 6, 8]
@@ -22,8 +22,8 @@ console.log("original data", arr); // Expected Output: [2, 4, 6]
 
 ## Immutability
 
-* Make sure objects *are not* **reassignable**
-* Make sure objects *are* **immutable**
+- Make sure objects _are not_ **reassignable**
+- Make sure objects _are_ **immutable**
 
 Most mutator methods can be replaced by other methods, examples:
 
@@ -46,7 +46,7 @@ const e = a.slice(1);
 const f = R.sort(myCompareFunction, a); // R = Ramda
 
 // Instead of: a.reverse();
-const g = R.reverse(a); // R = Ramda 
+const g = R.reverse(a); // R = Ramda
 ```
 
 ## Copying and Cloning
@@ -54,7 +54,7 @@ const g = R.reverse(a); // R = Ramda
 In JavaScript, you can't use the '=' to copy arrays because they are reference values. This is where you would use the spread operator.
 
 ```javascript
-const sheeps = ['🐑', '🐑', '🐑'];
+const sheeps = ["🐑", "🐑", "🐑"];
 
 const fakeSheeps = sheeps;
 const cloneSheeps = [...sheeps];

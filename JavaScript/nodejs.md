@@ -1,4 +1,4 @@
-# Node
+# Node JS
 
 ## Update all packages, and packages they need
 

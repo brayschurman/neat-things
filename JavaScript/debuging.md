@@ -11,15 +11,15 @@ Navigate through panels `Command + ]`
 ## Console
 
 ```javascript
-console.log() // general logging
+console.log(); // general logging
 
-console.info() // displays informational message
+console.info(); // displays informational message
 
-console.error() // displays error message
+console.error(); // displays error message
 
-console.table() // table
+console.table(); // table
 
-console.time() // start a timer
+console.time(); // start a timer
 
-console.timeEnd() // end a timer
+console.timeEnd(); // end a timer
 ```
