@@ -2,6 +2,8 @@
 
 [Source](https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code)
 
+These were originally written for C, but can be applied to any language. I've included examples and scenarios for JavaScript.
+
 ## 1. Simple Control Constructs
 
 No unnecessary gotos, breaks, continues, multiple exits from loops, multiple returns from functions, or other confusing control constructs.
