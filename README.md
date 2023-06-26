@@ -22,3 +22,9 @@ Here lies things I'd like to have reference to. Most are JavaScript oriented.
 - data structures
 - algorithms
 - big O
+- design patterns
+- testing
+- security
+- performance
+- networking
+- http
