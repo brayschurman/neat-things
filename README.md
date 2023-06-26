@@ -2,20 +2,20 @@
 
 Here lies things I'd like to have reference to. Most are JavaScript oriented.
 
-- [Async](async.md)
-- [Caching](caching.md)
-- [Command Line](command-line.md)
-- [Functional Programming](functional-programming.md)
-- [Debugging](debugging.md)
-- [Destructuring](destructuring.md)
-- [File Structure](file-structure.md)
-- [Functions](functions.md)
-- [Git](git.md)
-- [NextJS](nextjs.md)
-- [ReactJS](react.md)
-- [NASA 10 Rules](nasa-10-rules.md)
-- [Node](node.md)
-- [TypeScript](typescript.md)
+- [Async](src/async.md)
+- [Caching](src/caching.md)
+- [Command Line](src/command-line.md)
+- [Functional Programming](src/functional-programming.md)
+- [Debugging](src/debugging.md)
+- [Destructuring](src/destructuring.md)
+- [File Structure](src/file-structure.md)
+- [Functions](src/functions.md)
+- [Git](src/git.md)
+- [NextJS](src/nextjs.md)
+- [ReactJS](src/react.md)
+- [NASA 10 Rules](src/nasa-10-rules.md)
+- [Node](src/node.md)
+- [TypeScript](src/typescript.md)
 
 ## Todo
 
