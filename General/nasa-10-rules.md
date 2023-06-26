@@ -1,8 +1,8 @@
-# NASA's 10 Code Commandments
+# The Power of 10: Rules for Developing Safety-Critical Code (NASA)
 
-[The Power of 10](https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code)
+[Source](https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code)
 
-1. Simple Control Constructs
+## 1. Simple Control Constructs
 
 No unnecessary gotos, breaks, continues, multiple exits from loops, multiple returns from functions, or other confusing control constructs.
 
@@ -23,7 +23,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-2. Limit All Loops
+## 2. Limit All Loops
 
 All loops are bound by a fixed upper limit. This limit is checked at the top of the loop and is an Integer.
 
@@ -33,7 +33,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-3. Don't Use The Heap
+## 3. Don't Use The Heap
 
 No dynamic memory allocation, aka Malloc or Free. You should exclusively use the stack for all memory allocation. In JavaScript this could be interpreted as avoiding unnecessary object creation.
 
@@ -54,7 +54,7 @@ for (let i = 0; i < 10000; i++) {
 }
 ```
 
-4. Limit Function Size
+## 4. Limit Function Size
 
 A function should only perform one thing. They should be no longer than 60 lines. The greatly increases readability, maintainability, debugging, and testing.
 
@@ -79,7 +79,7 @@ function doEverything() {
 }
 ```
 
-5. Practice Data Hiding
+## 5. Practice Data Hiding
 
 Practice of data hiding is about hiding internal details. It restricts access to the inner workings of a class or object, and only exposes what is necessary. This maintains data integrity.
 
@@ -109,7 +109,7 @@ class Person {
 }
 ```
 
-6. Check Return Values
+## 6. Check Return Values
 
 Always check the return values of functions, and handle errors appropriately. This is especially important for functions that return error codes.
 
@@ -133,7 +133,7 @@ function doSomething() {
 }
 ```
 
-7. Use The Preprocessor Sparingly
+## 7. Use The Preprocessor Sparingly
 
 The preprocessor is a tool that allows you to define macros, which are replaced by the preprocessor before compilation. This can be used to define constants, or to create inline functions. In a language like JavaScript, this would be equivalent to using a transpiler like Babel or frameworks like React.
 
@@ -145,7 +145,7 @@ The preprocessor is a tool that allows you to define macros, which are replaced 
 const PI = 3.14159265358979323846;
 ```
 
-8. Limit Pointer Use, and no Function Pointers
+## 8. Limit Pointer Use, and no Function Pointers
 
 When you assign an object to a variable in JavaScript, you're assigning a reference to the location in memory where that object is stored. If you assign that variable to another variable, both will point to the same object, and changes made through one variable will be visible when accessing the object through the other variable. This might seem similar to dereferencing a pointer, but it's not quite the same thing.
 
@@ -162,7 +162,7 @@ let obj2 = { prop: 1 };
 console.log(obj.prop); /* 0 */
 ```
 
-9. Be Pedantic
+## 9. Be Pedantic
 
 When developing, ensure all warnings are enabled, and treat them as errors. This will help you catch bugs early, and ensure your code is as clean as possible.
 
@@ -170,7 +170,7 @@ When developing, ensure all warnings are enabled, and treat them as errors. This
 - [Prettier](https://prettier.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-10. Test, Test, Test
+## 10. Test, Test, Test
 
 Test your code. Test it again. Test it some more. Test it until you're sure it works. Then test it again. Test it in every way you can think of. Test it in ways you can't think of. Test it until you're sure it works. Then test it again.
 
