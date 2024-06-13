@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/scalability.md",
+                "file": "src/destructuring.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/scalability.md",
+                "file": "src/destructuring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/scalability.md",
+                "file": "src/destructuring.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/scalability.md"
+                "file": "src/destructuring.md"
               }
             }
           }
@@ -161,6 +161,8 @@
   },
   "active": "11df72fce02aa2ee",
   "lastOpenFiles": [
+    "README.md",
+    "src/scalability.md",
     "src/git.md",
     "src/nasa-10-rules.md",
     "src/nextjs.md",
@@ -168,7 +170,6 @@
     "src/normalization.md",
     "src/react.md",
     "src/typescript.md",
-    "src/scalability.md",
     "src/rest.md",
     "src/async.md",
     "src/command-line.md",
@@ -176,7 +177,6 @@
     "src/debugging.md",
     "src/design patterns.md",
     "src/destructuring.md",
-    "src/file-structure.md",
-    "README.md"
+    "src/file-structure.md"
   ]
 }
