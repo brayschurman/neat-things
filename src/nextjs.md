@@ -1,10 +1,38 @@
 # NextJS
 
+## Main Benefits
+
+
+
+
+
 ## Data Fetching
 
-- Make sure data "catching" logic goes _after_ all hooks... (useState, TRPC) I kept making this mistake and was getting weird rendering error.
+- Make sure data "catching" logic goes _after_ all hooks... (useState, TRPC) I kept making this mistake and was getting weird rendering error (multiple hooks)
 
-Ok, I made this doc after having 3 Space Invaders, bear with me.
+For example:
+```javascript
+const {
+data: programs,
+error,
+isPending,
+} = api.welbi.fetchPrograms.useQuery();
+
+if (isPending) {
+return <div>Loading...</div>;
+}
+
+if (error) {
+return <div>Error: {error.message}</div>;
+}
+
+// this is bad, it should go underneath fetchPrograms
+const attendProgram = api.welbi.attendProgram.useMutation({
+	onSuccess: () => {
+		void queryClient.invalidateQueries();
+	},
+});
+```
 
 ### getServerSideProps()
 

@@ -13,6 +13,8 @@ Here lies things I'd like to have reference to. Most are JavaScript oriented.
 - [Git](src/git.md)
 - [NextJS](src/nextjs.md)
 - [ReactJS](src/react.md)
+- [REST](rest.md)
+- 
 - [NASA 10 Rules](src/nasa-10-rules.md)
 - [Node](src/node.md)
 - [TypeScript](src/typescript.md)
